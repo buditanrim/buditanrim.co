@@ -1,0 +1,26 @@
+---
+const pageTitle = 'About Me'
+const happy = true
+const finished = false
+const goal = 3
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
+    <p>I'm budi</p>
+    {happy && <p>test I'm happy</p>}
+    {goal === 3 ? <p>goal is 2</p> : <p>goal is 3</p>}
+  </body>
+</html>
